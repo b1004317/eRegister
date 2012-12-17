@@ -1,6 +1,6 @@
 package uk.ac.shu.webarch.eregister
 
-class Student {
+class RegisterEntry {
 
     static constraints = {
     }
