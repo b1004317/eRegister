@@ -5,7 +5,7 @@ class RegClass {
 	Instructor class_instructor
 	Course class_course
 
-	static mappedBy = [classes_registrationsheets: 'regclass']
+	static mappedBy = [classes_registrationsheets: 'class_regclass']
 
   	static hasMany = [classes_registrationsheets: RegistrationSheet]
 	

@@ -8,7 +8,7 @@ class RegistrationSheet {
 	String studentSignature
 	String	date
 
-	static mappedBy = [classes__many_entries: 'registrationsheet']
+	static mappedBy = [classes__many_entries: 'class_registrationsheet']
 
   	static hasMany = [classes_many_entries: RegisterEntry]
 
