@@ -14,7 +14,7 @@ class BootStrap {
                                                                             instructor:matthew_instructor
                                                                                 ).save();
 
-
+    def chris_student = Student.findByStudentNumber('b1004319') ?: new Student (studentNumber:'b1004319', name:'Zac Richards').save();
 
     }
     def destroy = {
