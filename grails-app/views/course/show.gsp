@@ -52,20 +52,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${courseInstance?.instructorID}">
+				<g:if test="${courseInstance?.instructor}">
 				<li class="fieldcontain">
-					<span id="instructorID-label" class="property-label"><g:message code="course.instructorID.label" default="Instructor ID" /></span>
+					<span id="instructor-label" class="property-label"><g:message code="course.instructor.label" default="Instructor" /></span>
 					
-						<span class="property-value" aria-labelledby="instructorID-label"><g:fieldValue bean="${courseInstance}" field="instructorID"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${courseInstance?.instructorName}">
-				<li class="fieldcontain">
-					<span id="instructorName-label" class="property-label"><g:message code="course.instructorName.label" default="Instructor Name" /></span>
-					
-						<span class="property-value" aria-labelledby="instructorName-label"><g:fieldValue bean="${courseInstance}" field="instructorName"/></span>
+						<span class="property-value" aria-labelledby="instructor-label"><g:link controller="instructor" action="show" id="${courseInstance?.instructor?.id}">${courseInstance?.instructor?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

@@ -23,29 +23,25 @@
 			<table>
 				<thead>
 					<tr>
-					
+
 						<g:sortableColumn property="courseID" title="${message(code: 'course.courseID.label', default: 'Course ID')}" />
-					
+
 						<g:sortableColumn property="courseName" title="${message(code: 'course.courseName.label', default: 'Course Name')}" />
-					
-						<g:sortableColumn property="instructorID" title="${message(code: 'course.instructorID.label', default: 'Instructor ID')}" />
-					
-						<g:sortableColumn property="instructorName" title="${message(code: 'course.instructorName.label', default: 'Instructor Name')}" />
-					
+
+						<th><g:message code="course.instructor.label" default="Instructor" /></th>
+
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${courseInstanceList}" status="i" var="courseInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-					
+
 						<td><g:link action="show" id="${courseInstance.id}">${fieldValue(bean: courseInstance, field: "courseID")}</g:link></td>
-					
+
 						<td>${fieldValue(bean: courseInstance, field: "courseName")}</td>
-					
-						<td>${fieldValue(bean: courseInstance, field: "instructorID")}</td>
-					
-						<td>${fieldValue(bean: courseInstance, field: "instructorName")}</td>
-					
+
+						<td>${courseInstance.instructor.name}</td>
+
 					</tr>
 				</g:each>
 				</tbody>
@@ -56,3 +52,4 @@
 		</div>
 	</body>
 </html>
+

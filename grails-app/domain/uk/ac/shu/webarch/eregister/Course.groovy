@@ -6,8 +6,8 @@ class Course {
   static hasMany = [classes_no_of_Regclass_on_course: RegClass]
 	String courseName
 	String courseID
-	String instructorName
-	String instructorID
+	Instructor instructor
     static constraints = {
     }
 }
+
