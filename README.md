@@ -1,4 +1,4 @@
-eRegister
+eRegister by Christopher Fox 21004317
 =========
 Please follow these instructions on how to work my eRegister application
 
