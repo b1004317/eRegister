@@ -26,3 +26,6 @@ Following this link will redirect you to apply.
 
 6. As a student enter your student number and the class you are signing into and submit.
 
+7. Should a user wish to view the data in a different format the pages are available with .xml and .json extensions
+In order to change the view type .xml or .json after the url
+
