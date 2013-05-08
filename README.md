@@ -1,5 +1,6 @@
 eRegister
 =========
+Please follow these instructions on how to work my eRegister application
 
 An electronic attendance register. I create this piece of work as part of an assignment at Sheffield Hallam for my Web Architectures module
 It showcases my knowledge of MVC frameworks and also demonstrates my understanding of configuration managment
