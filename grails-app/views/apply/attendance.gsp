@@ -6,9 +6,8 @@
 
 	</head>
 	<body>
-    Students who ${student} have signed in<br/>
-    Congrats ${course} you have signed in<br/>
-    to
+    congratulations ${student} you have signed in to <br/>
+     ${course}
 	</body>
 </html>
 
