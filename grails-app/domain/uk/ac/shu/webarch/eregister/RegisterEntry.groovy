@@ -4,6 +4,7 @@ class RegisterEntry {
 	String studentID
 	String studentName
 	String courseID
+	Date ts = new Date()
 
 	RegistrationSheet class_registrationsheet
 	Student class_student
@@ -11,3 +12,4 @@ class RegisterEntry {
     static constraints = {
     }
 }
+

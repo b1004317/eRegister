@@ -6,7 +6,8 @@ class RegistrationSheet {
 
 	String studentName
 	String studentSignature
-	String	date
+	String date
+	String lessonnumber
 
 	static mappedBy = [classes__many_entries: 'class_registrationsheet']
 
@@ -15,3 +16,4 @@ class RegistrationSheet {
     static constraints = {
     }
 }
+

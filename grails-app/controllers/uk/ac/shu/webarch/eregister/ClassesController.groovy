@@ -6,11 +6,15 @@ import grails.converters.*
 class ClassesController {
 
   def index() {
+def result = [:]
+    result.classes = []
+    RegClass.findAll().each { cls ->
+      result.classes.add( [
+                           instructorName:cls.class_instructor.name,
+                           couseCode:cls.class_course.courseID,
+                           courseName:cls.class_course.courseName] )
+    }
 
-    def result=[
-      classList:'one',
-      b:'two'
-   ]
 
     withFormat {
       html result
